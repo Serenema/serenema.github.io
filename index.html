@@ -1,9 +1,4 @@
-<html>
-    
-    
-    
-
-<head>
+<html><head>
     <title>Big Road: Simplist's solution to a mobile-only web story</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
     <style>
@@ -130,13 +125,11 @@
         </author-block>
     </cover-image>
 
-    <p>This is a simplist solution to a mobile-only web story. Users with no coding background should be able to use this template after a 10 minute crash course on HTML. One does not need to learn CSS, in order to make it work in a reasonable way.</p>
+    <p>国际标准有两个：第一个是公认的标准，全社会教育总投入占GDP的比值，4%是欧美国家的平均水平，超过5%就很优秀了。另一个是政府的教育投入占政府财政总支出的比值。</p>
 
-    <h2> 中国近20年对教育的投入 </h2>
+    <h2> 中美近十年年对教育的投入 </h2>
 
-    <p>
-        中国近20年对教育的投入逐渐在增长......
-    </p>
+    <p>做两张图对比中美1999-2017教育投入在GDP投入占比、在财政支出的占比</p>
 
     <ul>
         <li>
@@ -149,17 +142,9 @@
         <li>Snippet for responsive embedding of interactive charts, via <code>iframe</code></li>
     </ul>
 
-    <h2> 中国政府财政性经费投入 </h2>
-    
+    <h2> 中美在教育上财政投入的年增长率 </h2>
 
-    <p>中国政府财政性教育投入逐渐增长......</p>
-    
-      <figure>
-        <img src="images/国家财政性教育经费.png" alt="">
-        <figcaption>
-            Sometimes, the caption can be very long which is a standalone story by itself. So you don't have to put the entire block into emphasis mode. Just <em>emaphsize the part you find most important</em>.
-        </figcaption>
-    </figure>
+    <p>Make your first web story in three steps:</p>
 
     <ol>
         <li>Fork this repository</li>
@@ -170,36 +155,24 @@
         </li>
     </ol>
 
-    <h2>世界各国教育经费GDP占比</h2>
-
-    <p>
-        比较美国、日本
-    </p>
-
-    <h3>民间对中国教育的投入</h3>
-
-    <p>
-        民间对中国教育的投入每年不太一样
-    </p>
     
-      <figure>
-        <img src="images/民办学校办学经费.png" alt="">
-        <figcaption>
-            Always feel happy emaphsize the part you find most important.
-        </figcaption>
-    </figure>
 
-    <h3>Image with caption</h3>
+    
+
+    
+
+    
+
+    
+
+    
 
     <figure>
-        <img src="https://newsus.cgtn.com/news/3367544d7a45544f3263544d3459444f304d6a4e31457a6333566d54/img/001191387c79420e8f8fc88c2560d9cc/001191387c79420e8f8fc88c2560d9cc.jpg">
+        <img src="images/国家财政性教育经费.png" alt="">
         <figcaption>
-            <em> Photo: Zhang Yingying </em>
-            <br> Source: CGTN
+            Sometimes, the caption can be very long which is a standalone story by itself. So you don't have to put the entire block into emphasis mode. Just <em>emaphsize the part you find most important</em>.
         </figcaption>
     </figure>
-
-  
     
      <figure>
         <img src="images/民办学校办学经费.png" alt="">
@@ -215,11 +188,11 @@
     <p>Embedding videos in a responsive manner is always a pain. The conventional technique is to embed by <code>iframe</code>. You need to specify the width and height of the iframe, making it non-responsive to different screens.</p>
 
     <p>Use Youtube as an example. You can copy the following code of
-        <a href="https://www.youtube.com/watch?v=qp0HIF3SfI4">this video</a> from its "Share --> Embed" button:
+        <a href="https://www.youtube.com/watch?v=qp0HIF3SfI4">this video</a> from its "Share --&gt; Embed" button:
     </p>
 
     <p><code>
-        &#x3C;iframe width=&#x22;560&#x22; height=&#x22;315&#x22; src=&#x22;https://www.youtube.com/embed/qp0HIF3SfI4&#x22; frameborder=&#x22;0&#x22; allow=&#x22;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
+        &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qp0HIF3SfI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
     </code></p>
 
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qp0HIF3SfI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -238,7 +211,7 @@
     </p>
 
     <responsive-block>
-        <iframe src='https://www.youtube.com/embed/qp0HIF3SfI4' frameborder='0' allowfullscreen>
+        <iframe src="https://www.youtube.com/embed/qp0HIF3SfI4" frameborder="0" allowfullscreen="">
         </iframe>
     </responsive-block>
 
@@ -262,14 +235,14 @@
     </p>
 
     <p>
-        <code>&#x3C;responsive-block&#x3E;&#x3C;iframe src=&#x27;//server-name/path/to/the/file.html&#x27; frameborder=&#x27;0&#x27; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;&#x3C;/responsive-block&#x3E;</code>
+        <code>&lt;responsive-block&gt;&lt;iframe src='//server-name/path/to/the/file.html' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/responsive-block&gt;</code>
     </p>
 
     <p> Here is an example of a map made from Python's <code>folium</code> library. It is the original hi-fi version of the raster image used in <a href="https://mp.weixin.qq.com/s/aFfa7WlyT0vwXBlDYvacCg">this blog post</a>. Although the following one is
         not interactive or animated, you can easily make it so from the <code>folium</code> library. </p>
 
     <responsive-block>
-        <iframe src='charts/openrice-sichuan-food/map.html' frameborder='0' allowfullscreen>
+        <iframe src="charts/openrice-sichuan-food/map.html" frameborder="0" allowfullscreen="">
         </iframe>
     </responsive-block>
 
@@ -280,7 +253,7 @@
     </p>
 
     <responsive-block>
-        <iframe src='//hupili.net/20170800-sichuan-earthquake-in-100years/' frameborder='0' allowfullscreen>
+        <iframe src="//hupili.net/20170800-sichuan-earthquake-in-100years/" frameborder="0" allowfullscreen="">
         </iframe>
     </responsive-block>
 
@@ -290,7 +263,7 @@
 
     <ratio-1-to-1>
         <responsive-block>
-            <iframe src='//hupili.net/20170800-sichuan-earthquake-in-100years/' frameborder='0' allowfullscreen>
+            <iframe src="//hupili.net/20170800-sichuan-earthquake-in-100years/" frameborder="0" allowfullscreen="">
         </iframe>
         </responsive-block>
     </ratio-1-to-1>
@@ -317,7 +290,7 @@
     <p>Find the GitHub repo <a href="https://github.com/hupili/big-road">here</a>.</p>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37311363-17"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37311363-17"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -329,6 +302,7 @@
         gtag('config', 'UA-37311363-17');
     </script>
 
-</body>
 
-</html>
+
+
+</body></html>
